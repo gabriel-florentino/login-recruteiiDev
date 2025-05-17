@@ -1,12 +1,48 @@
-<!doctype html>
-<html lang="pt-br">
+<!DOCTYPE html>
+<html lang="pt-BR">
   <head>
     <meta charset="UTF-8" />
+    <link rel="icon" href="/icons/favicon.svg" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Recruteii DEV</title>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+
+    <!-- SEO básico -->
+    <title>RecruteiDev - Oportunidades que encontram você</title>
+    <meta name="description" content="Plataforma de recrutamento reverso para desenvolvedores. Cadastre-se e deixe as empresas encontrarem você." />
+    <meta name="author" content="Gabriel Florentino" />
+    <meta name="robots" content="index, follow" />
+
+    <!-- Social media -->
+    <meta property="og:title" content="RecruteiDev - Oportunidades que encontram você" />
+    <meta property="og:description" content="Uma nova forma de recrutamento para devs: você mostra seu talento e as empresas vêm até você." />
+    <meta property="og:image" content="/thumbnail.png" />
+    <!--<meta property="og:url" content="https://recruteidev.com.br" />-->
+    <meta property="og:type" content="website" />
+
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:title" content="RecruteiDev - Oportunidades que encontram você" />
+    <meta name="twitter:description" content="Cadastre seu perfil como dev e deixe as empresas te descobrirem." />
+    <meta name="twitter:image" content="/thumbnail.png" />
+
+    <!-- Progressive Web App (opcional) -->
+    <link rel="manifest" href="/manifest.json" />
+    <!-- Light mode -->
+    <meta name="theme-color" content="#ffffff" media="(prefers-color-scheme: light)">
+    <!-- Dark mode -->
+    <meta name="theme-color" content="#111827" media="(prefers-color-scheme: dark)">
+
+    <!-- Fonts (exemplo com Inter) -->
+    <!-- Righteous para títulos e logo -->
+    <link href="https://fonts.googleapis.com/css2?family=Righteous&display=swap" rel="stylesheet">
+
+    <!-- Roboto para textos gerais -->
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
+
+
+    <!-- Tailwind via Vite -->
+    <script type="module" crossorigin src="/src/main.jsx"></script>
   </head>
-  <body>
+  <body class="bg-slate-950 text-white font-sans antialiased">
     <div id="root"></div>
-    <script type="module" src="/src/main.jsx"></script>
   </body>
 </html>
