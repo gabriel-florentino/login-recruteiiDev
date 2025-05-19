@@ -7,9 +7,18 @@ module.exports = {
   darkMode: 'class', // ativa modo dark via classe .dark no html ou body
   theme: {
     extend: {
+      backgroundImage: {
+        'bg-auth': "url('/images/bg-auth.webp')",
+      },
       fontFamily: {
-        righteous: ['Righteous', 'cursive'],
-        roboto: ['Roboto', 'sans-serif'],
+        title: ['Righteous', 'cursive'],
+        body: ['Roboto', 'sans-serif'],
+      },
+      fontSize: {
+        'h1': ['2.25rem', { lineHeight: '2.5rem', letterSpacing: '-0.02em' }],  // 36px
+        'h2': ['1.875rem', { lineHeight: '2.25rem' }],  // 30px
+        'h3': ['1.5rem', { lineHeight: '2rem' }],       // 24px
+        'body': ['1rem', { lineHeight: '1.5rem' }],     // 16px
       },
       colors: {
         // Textos
