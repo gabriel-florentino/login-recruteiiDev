@@ -8,7 +8,7 @@ export default function LinkText({
   return (
     <Link
       to={to}
-      className={`text-sm text-primary hover:underline font-medium text-textLink-light max-sm:text-xs${className}`}
+      className={`${className} text-sm text-primary hover:underline font-medium text-textLink-light max-sm:text-xs`}
     >
       {children}
     </Link>

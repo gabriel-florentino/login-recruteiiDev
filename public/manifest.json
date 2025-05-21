@@ -1,7 +1,7 @@
 {
-  "name": "RecruteiDev",
+  "name": "Login RecruteiDev",
   "short_name": "RecruteiDev",
-  "start_url": "/",
+  "start_url": "/login",
   "display": "standalone",
   "background_color": "#0f172a",
   "theme_color": "#0f172a",

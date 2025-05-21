@@ -1,26 +1,27 @@
 import React from "react";
 import { useForm } from "react-hook-form";
 import { yupResolver } from "@hookform/resolvers/yup";
-import { schema } from "../validations/userSchema";
-import FormBase from "../../../components/moleculars/FormBase";
+import { schema } from "../validations/loginSchema";
+import FormBase from "../../../components/organisms/FormBase";
 import RememberMeCheckbox from "../../../components/atoms/Checkbox";
 import LinkText from "../../../components/atoms/Link"; // ajuste o caminho conforme sua estrutura
 import { FcGoogle } from "react-icons/fc";
 import ButtonGoogle from "../../../components/atoms/PrimaryButton"
+import PageWrapper from "../../../components/moleculars/pageWrapper"
 
 export default function Login() {
-  const {
-    register,
-    handleSubmit,
-    formState: { errors, isSubmitting },
-  } = useForm({
-    resolver: yupResolver(schema),
-  });
-
-  const onSubmit = (data) => {
-    console.log("Login data:", data);
-    alert("Login bem-sucedido!");
+     const onSubmit = (data) => {
+      console.log("Login data:", data);
+      alert("Login bem-sucedido!");
   };
+  
+    const {
+      register,
+      handleSubmit,
+      formState: { errors, isSubmitting },
+    } = useForm({
+      resolver: yupResolver(schema),
+    });
 
   const fields = [
     { name: "email", label: "Email", type: "email", placeholder: "email@exemplo.com" },
@@ -28,6 +29,7 @@ export default function Login() {
   ];
 
   return (
+    <PageWrapper>
     <div className="relative min-h-screen w-full max-md:bg-none bg-bg-auth bg-cover bg-center flex 
     items-center justify-center">
       {/* Camada de blur */}
@@ -42,45 +44,48 @@ export default function Login() {
                 
         <section className="flex items-center justify-center max-md:h-full w-full">
           <FormBase
-  title="Login"
-  fields={fields}
-  schema={schema}
-  onSubmit={onSubmit}
-  buttonText="Entrar"
-  loading={isSubmitting}
-  extraBeforeButton={({ register }) => (
-    <div className="flex items-center justify-between text-sm">
-      <RememberMeCheckbox
-        register={register}
-        nameSaveData="rememberMe"
-        text="Lembrar de mim"
-      />
-      <LinkText to="/recuperar-senha">Esqueci minha senha</LinkText>
-    </div>
-  )}
-  extraAfterButton={({ register }) => (
-    <>
-      <div className="flex items-center my-2">
-        <div className="flex-grow h-px bg-border-light dark:bg-border-dark" />
-        <span className="text-sm text-textSecondary-light dark:text-textSecondary-dark">ou</span>
-        <div className="flex-grow h-px bg-border-light dark:bg-border-dark" />
-      </div>
+          title="Login"
+          fields={fields}
+          onSubmit={handleSubmit(onSubmit)}
+          buttonText="Entrar"
+          loading={isSubmitting}
+          className=""
+          extraBeforeButton={({ register }) => (
+            <div className="flex items-center justify-between text-sm my-6 mx-2">
+              <RememberMeCheckbox
+                register={register}
+                nameSaveData="rememberMe"
+                text="Lembrar de mim"
+              />
+              <LinkText to="/register" className="">Cadastre-se agora!</LinkText>
+              
+            </div>
+          )}
+          extraAfterButton={({ register }) => (
+            <>
+              <div className="flex items-center my-2">
+                <div className="flex-grow h-px bg-border-light dark:bg-border-dark" />
+                <span className="text-sm text-textSecondary-light">ou</span>
+                <div className="flex-grow h-px bg-border-light" />
+              </div>
 
-      <ButtonGoogle
-        icon={<FcGoogle className="w-5 h-5" />}
-        onClick={() => alert("Login com Google")}
-        className="bg-light w-full border"
-      >
-        Entrar com Google
-      </ButtonGoogle>
-    </>
-  )}
-  register={register}
-  errors={errors}
-/>
+              <ButtonGoogle
+                icon={<FcGoogle className="w-5 h-5" />}
+                onClick={() => alert("Login com Google")}
+                className="bg-light w-full border mb-4"
+              >
+                Entrar com Google
+              </ButtonGoogle>
+              <LinkText to="/recuperar-senha" className="ml-2">Esqueci minha senha</LinkText>
+            </>
+          )}
+          register={register}
+          errors={errors}
+        />
         </section>
         
       </div>
     </div>
+    </PageWrapper>
   );
 }

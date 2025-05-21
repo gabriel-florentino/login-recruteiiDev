@@ -1,4 +1,4 @@
-import * as yup from "yup";
+import * as Yup from "yup";
 
 const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]{2,}$/; 
 // Explicando rápido:  
@@ -24,13 +24,13 @@ function hasNoSequences(value) {
   return true;
 }
 
-export const schema = yup.object().shape({
-  rememberMe: yup.boolean(),
-  email: yup
+export const schema = Yup.object().shape({
+  rememberMe: Yup.boolean(),
+  email: Yup
     .string()
     .required("Email obrigatório")
     .matches(emailRegex, "Email inválido"),
-  senha: yup
+  senha: Yup
     .string()
     .required("Senha obrigatória")
     .min(6, "Senha deve ter minimo 6 caracteres")
