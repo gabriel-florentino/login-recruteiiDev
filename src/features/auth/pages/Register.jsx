@@ -1,3 +1,17 @@
+/**
+ * Cadastra um novo usuário no sistema.
+ *
+ * @async
+ * @function onSubmit
+ * @param {Object} data - Dados do formulário contendo nome, email e senha.
+ * @param {string} data.nome - Nome completo do usuário.
+ * @param {string} data.email - Email do usuário.
+ * @param {string} data.senha - Senha do usuário.
+ * @returns {Promise<void>} - Promise que resolve ao completar o cadastro.
+ *
+ * @throws {Error} Caso ocorra erro no processo de cadastro.
+ */
+
 import React from "react";
 import { useForm } from "react-hook-form";
 import { yupResolver } from "@hookform/resolvers/yup";
@@ -10,6 +24,13 @@ import PageWrapper from "../../../components/moleculars/pageWrapper";
 import { toast } from "react-toastify";
 import { useNavigate } from "react-router-dom";
 import {registerUser} from "../services/authService"
+
+/**
+ * Componente de cadastro que valida e envia os dados para registrar um novo usuário.
+ *
+ * @component
+ * @returns {JSX.Element} Formulário de cadastro
+ */
 
 export default function Register() {
   const navigate = useNavigate();

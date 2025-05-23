@@ -1,4 +1,13 @@
-// src/components/PublicOnlyRoute.jsx
+/**
+ * Componente que protege rotas públicas, permitindo acesso somente a usuários não autenticados.
+ * Caso o usuário já esteja logado, exibe mensagem e redireciona para o painel correspondente ao seu perfil (empresa ou dev).
+ *
+ * @param {Object} props
+ * @param {React.ReactNode} props.children - Componentes filhos que serão renderizados se o usuário não estiver autenticado.
+ *
+ * @returns {JSX.Element|null} - Retorna os filhos se usuário não autenticado, ou componente de redirecionamento/spinner.
+ */
+
 import { useAuth } from "../context/AuthContext";
 import Redirect from "../components/moleculars/Redirect";
 import routePublic from "../assets/routePublic .webp";
@@ -12,7 +21,6 @@ export default function PublicOnlyRoute({ children }) {
   const [loading, setLoading] = useState(true);
   const navigate = useNavigate();
 
-  // Aguarda o carregamento inicial
   useEffect(() => {
     if (usuario === undefined) return;
 
@@ -23,7 +31,6 @@ export default function PublicOnlyRoute({ children }) {
     }
   }, [usuario]);
 
-  // Executa redirecionamento *após* renderizar aviso
   useEffect(() => {
     if (!aguardandoRedirecionamento) return;
 

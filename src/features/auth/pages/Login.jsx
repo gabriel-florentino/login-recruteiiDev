@@ -1,3 +1,16 @@
+/**
+ * Realiza o login do usuário com email e senha.
+ *
+ * @async
+ * @function onSubmit
+ * @param {Object} data - Dados do formulário contendo email e senha.
+ * @param {string} data.email - Email do usuário.
+ * @param {string} data.senha - Senha do usuário.
+ * @returns {Promise<void>} - Promise que resolve ao completar o processo de login.
+ *
+ * @throws {Error} Caso ocorra erro na tentativa de login.
+ */
+
 import React from "react";
 import { useForm } from "react-hook-form";
 import { yupResolver } from "@hookform/resolvers/yup";

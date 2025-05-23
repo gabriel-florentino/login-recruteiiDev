@@ -1,3 +1,18 @@
+/**
+ * Componente que exibe uma página de erro 404 customizada quando o usuário acessa uma rota inválida.
+ * Após aguardar o carregamento do estado de autenticação, mostra uma mensagem de erro e redireciona o usuário
+ * para a página adequada, dependendo do seu estado de login e tipo de usuário.
+ * 
+ * Redireciona:
+ * - Usuários com CPF e tipo empresa para "/cadastrar-empresa"
+ * - Usuários com CPF e tipo desenvolvedor para "/cadastrar-desenvolvedor"
+ * - Usuários não autenticados para "/entrar"
+ * 
+ * O redirecionamento ocorre após 5 segundos exibindo um componente de aviso visual.
+ * 
+ * @returns {JSX.Element|null} - Retorna spinner durante o loading, null enquanto espera o momento do redirect, ou o componente de redirect.
+ */
+
 import { useAuth } from "../context/AuthContext";
 import { useEffect, useState } from "react";
 import Redirect from "../components/moleculars/Redirect";

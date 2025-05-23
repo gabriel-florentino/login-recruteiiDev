@@ -69,7 +69,7 @@ Wrapper para páginas que aplica animações de entrada e saída usando Framer M
 </PageWrapper>
 ```
 
-###Redirect
+### Redirect
 
 Componente para exibir mensagem de redirecionamento com animação, barra de progresso e ícone.
 
@@ -86,13 +86,13 @@ Componente para exibir mensagem de redirecionamento com animação, barra de pro
 <Redirect
   title="Redirecionando"
   mensage="Você será redirecionado em breve."
-  image=&lt;FaReact size={48} /&gt;
+  image=<FaReact size={48}/>
 />
 ```
 
 ---
 
-##Tecnologias
+## Tecnologias
 
 - React
 - Framer Motion
@@ -101,6 +101,6 @@ Componente para exibir mensagem de redirecionamento com animação, barra de pro
 
 ---
 
-##Autor
+## Autor
 
 Projeto desenvolvido por GABRIEL GUSTAVO CAMARGO FLORENTINO, focando em UX, autenticação e animações modernas.

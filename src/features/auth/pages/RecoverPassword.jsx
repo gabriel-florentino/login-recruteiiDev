@@ -8,6 +8,13 @@ import PageWrapper from "../../../components/moleculars/pageWrapper"
 import { sendPasswordResetEmail } from "firebase/auth";
 import { auth } from "../../../firebase"; // ajuste conforme seu caminho
 
+/**
+ * Componente para recuperação de senha, enviando um link para o email informado.
+ *
+ * @component
+ * @returns {JSX.Element} Formulário de recuperação de senha
+ */
+
 export default function RecoverPassword() {
   const onSubmit = async ({ email }) => {
     try {

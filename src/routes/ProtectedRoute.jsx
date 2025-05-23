@@ -1,4 +1,14 @@
-// src/components/ProtectedRoute.jsx
+/**
+ * Componente que protege rotas privadas, permitindo acesso apenas a usuários autenticados e com perfil correto.
+ * Se o usuário não estiver autenticado ou tentar acessar rota proibida para seu tipo (empresa ou dev), exibe mensagem de alerta e redireciona.
+ *
+ * @param {Object} props
+ * @param {React.ReactNode} props.children - Componentes filhos que serão renderizados se a rota for permitida.
+ * @param {"empresa"|"dev"} [props.only] - Define o tipo de usuário autorizado a acessar a rota.
+ *
+ * @returns {JSX.Element|null} - Retorna os filhos se autorizado, caso contrário retorna componente de redirecionamento ou spinner durante carregamento.
+ */
+
 import { useAuth } from "../context/AuthContext";
 import Redirect from "../components/moleculars/Redirect";
 import routePrivate from "../assets/routePrivate.webp";
@@ -12,11 +22,10 @@ export default function ProtectedRoute({ children, only }) {
   const navigate = useNavigate();
 
   useEffect(() => {
-    if (loading) return; // espera o loading terminar
+    if (loading) return;
 
-    if (usuario === undefined) return; // estado inicial, não renderiza nada
+    if (usuario === undefined) return;
 
-    // Se não está logado
     if (!usuario) {
       setMensagem({
         texto: "Você precisa mostrar sua credencial futurista para entrar aqui. Autentique-se e tente de novo!",
@@ -25,7 +34,6 @@ export default function ProtectedRoute({ children, only }) {
       return;
     }
 
-    // Está logado, mas acessando rota errada
     const isEnterprise = usuario?.isEnterprise;
     if (only === "empresa" && !isEnterprise) {
       setMensagem({
@@ -38,7 +46,7 @@ export default function ProtectedRoute({ children, only }) {
         destino: "/cadastrar-empresa",
       });
     } else {
-      setMensagem(null); // rota permitida, limpa mensagem
+      setMensagem(null);
     }
   }, [usuario, only, loading]);
 
