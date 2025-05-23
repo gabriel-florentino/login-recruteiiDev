@@ -2,18 +2,31 @@
 
 O **RecruteiDev Login** é o módulo responsável por oferecer um login **completo, seguro e elegante** para a plataforma RecruteiDev. O objetivo é garantir que desenvolvedores e empresas acessem seus perfis com facilidade, mantendo a segurança e experiência de uso no mais alto nível.
 
+> 🔁 **Diferente do LinkedIn tradicional**, aqui a dinâmica é invertida: as empresas buscam talentos dev promissores, em vez de devs implorarem por atenção. 😉
+
+<p text-align="center">
+  <a href="mailto:gabrielflorentino.contato@gmail.com">
+    <img src="https://img.shields.io/badge/E--mail-D14836?style=for-the-badge&logo=gmail&logoColor=white" alt="Email badge"/>
+  </a>
+  <a href="https://wa.me/5547996594157">
+    <img src="https://img.shields.io/badge/WhatsApp-25D366?style=for-the-badge&logo=whatsapp&logoColor=white" alt="WhatsApp badge"/>
+  </a>
+  <a href="https://www.linkedin.com/in/gabriel-florentino">
+    <img src="https://img.shields.io/badge/LinkedIn-0077B5?style=for-the-badge&logo=linkedin&logoColor=white" alt="LinkedIn badge"/>
+  </a>
+</p>
+
 ---
 
 🚀 **Acesse a aplicação real:**  
-👉 [Clique aqui para ver o app no ar!](https://login-recruteii-dev.vercel.app/entrar)
+👉 [Clique aqui para ver o app no ar!](https://login-recruteii-dev.vercel.app/)
 
 ---
 
 ![Banner do Projeto](https://res.cloudinary.com/dgrhic6tl/image/upload/v1748014376/CapturadeTela16-ezgif.com-jpg-to-webp-converter_eqjp0q.webp)
 
-> 🔁 **Diferente do LinkedIn tradicional**, aqui a dinâmica é invertida: as empresas buscam talentos dev promissores, em vez de devs implorarem por atenção. 😉
+---
 
-**Tecnologias utilizadas**
 ![React](https://img.shields.io/badge/React-20232A?style=for-the-badge&logo=react&logoColor=61DAFB)
 ![Tailwind CSS](https://img.shields.io/badge/Tailwind_CSS-38B2AC?style=for-the-badge&logo=tailwind-css&logoColor=white)
 ![HTML5](https://img.shields.io/badge/HTML5-E34F26?style=for-the-badge&logo=html5&logoColor=white)
@@ -57,19 +70,105 @@ O **RecruteiDev Login** é o módulo responsável por oferecer um login **comple
 
 ## ✨ Funcionalidades principais
 
-- Login com e-mail e senha com validações robustas (React Hook Form + Yup)
-- Login via Google Authentication (OAuth)
-- Recuperação de senha com envio de e-mail (backend para integração futura)
-- Validação real de CPF com cálculo correto
-- Máscara dinâmica de CPF com Cleave.js
-- Proteção de rotas privadas com redirecionamento amigável
-- Páginas de erro personalizadas para melhor UX
-- Controle global de autenticação com Context API
-- Animações fluidas com Framer Motion
-- Diferenciação entre contas de desenvolvedor e empresa
-- Permissões e acessos baseados no tipo de usuário
+<table>
+  <tr>
+    <td>
+      <ul>
+        <li>
+          Login com e-mail e senha com validações robustas (React Hook Form + Yup)
+        </li>
+        <li>
+          Login via Google Authentication (OAuth)
+        </li>
+        <li>
+          Recuperação de senha com envio de e-mail (backend para integração futura)
+        </li>
+        <li>
+          Validação real de CPF com cálculo correto
+        </li>
+        <li>
+          Máscara dinâmica de CPF com Cleave.js
+        </li>
+        <li>
+          Proteção de rotas privadas com redirecionamento amigável
+        </li>
+      </ul>
+    </td>
+    <td>
+      <ul>
+          <li>
+            Páginas de erro personalizadas para melhor UX
+          </li>
+          <li>
+            Controle global de autenticação com Context API
+          </li>
+          <li>
+            Animações fluidas com Framer Motion
+          </li>
+          <li>
+            Diferenciação entre contas de desenvolvedor e empresa
+          </li>
+          <li>
+            Permissões e acessos baseados no tipo de usuário
+          </li>
+          <li>
+            Documentado com JsDoc e README.md por modulo
+          </li>
+        </ul>
+      </td>
+    </tr>
+</table>
 
 ---
+
+## 🔮 Próximas etapas (Roadmap
+
+<table>
+  <tr>
+    <td>
+      <ul>
+        <li>
+          Criação da landing page do projeto
+        </li>
+        <li>
+          Fazer testes em jest
+        </li>
+        <li>
+          Backend seguro com rotas, autenticação e JWT real
+        </li>
+        <li>
+          Implementar modo dark e suporte bilíngue (Português e Inglês)
+        </li>
+        <li>
+           Dashboard exclusivo para empresas buscarem desenvolvedores
+        </li>
+        <li>
+          Perfis públicos e currículos customizáveis para devs
+        </li>
+      </ul>
+    </td>
+    <td>
+      <ul>
+          <li>
+            Chat direto entre empresa e desenvolvedor
+          </li>
+          <li>
+            Sistema de avaliação e feedback entre usuários
+          </li>
+          <li>
+            IA para auxiliar devs na criação e otimização de seus perfis
+          </li>
+          <li>
+            Documentação completa e proteção geral do projeto
+          </li>
+          <li>
+            Exposição pública e gratuita para toda a comunidade
+          </li>
+        </ul>
+      </td>
+    </tr>
+</table>
+
 
 ## 🎯 Como usar
 
@@ -117,24 +216,6 @@ O **RecruteiDev Login** é o módulo responsável por oferecer um login **comple
   "yup": "^1.6.1"
 }}
 ```
-
----
-
-## 🔮 Próximas etapas (Roadmap)
-
-- Criação da landing page do projeto
-- Fazer testes em jest
-- Backend seguro com rotas, autenticação e JWT real
-- Implementar modo dark e suporte bilíngue (Português e Inglês)
-- Integração completa com backend para recuperação funcional de senha
-- Página de edição de perfil e configurações para usuários
-- Dashboard exclusivo para empresas buscarem desenvolvedores
-- Perfis públicos e currículos customizáveis para devs
-- Chat direto entre empresa e desenvolvedor
-- Sistema de avaliação e feedback entre usuários
-- IA para auxiliar devs na criação e otimização de seus perfis
-- Documentação completa e proteção geral do projeto
-- Exposição pública e gratuita para toda a comunidade
 
 ---
 
