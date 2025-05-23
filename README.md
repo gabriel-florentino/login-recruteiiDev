@@ -9,7 +9,7 @@ O **RecruteiDev Login** é o módulo responsável por oferecer um login **comple
 
 ## Telas do APP no mobile
 
-<p float="left" display="flex" justify-content="space-between" flex-wrap="nowrap">
+<p float="left" display= "inline-block">
   <img src="https://res.cloudinary.com/dgrhic6tl/image/upload/v1748014373/CapturadeTela18-ezgif.com-jpg-to-webp-converter_pjeom5.webp"; />
   <img src="https://res.cloudinary.com/dgrhic6tl/image/upload/v1748013723/Captura-de-Tela-_19__nmu09z.webp"/>
   <img src="https://res.cloudinary.com/dgrhic6tl/image/upload/v1748014369/CapturadeTela24-ezgif.com-jpg-to-webp-converter_re6pan.webp" />
