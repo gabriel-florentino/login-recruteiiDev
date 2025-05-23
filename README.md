@@ -2,25 +2,18 @@
 
 O **RecruteiDev Login** é o módulo responsável por oferecer um login **completo, seguro e elegante** para a plataforma RecruteiDev. O objetivo é garantir que desenvolvedores e empresas acessem seus perfis com facilidade, mantendo a segurança e experiência de uso no mais alto nível.
 
+---
+
+🚀 **Acesse a aplicação real:**  
+👉 [Clique aqui para ver o app no ar!](https://login-recruteii-dev.vercel.app/entrar)
+
+---
+
 ![Banner do Projeto](https://res.cloudinary.com/dgrhic6tl/image/upload/v1748014376/CapturadeTela16-ezgif.com-jpg-to-webp-converter_eqjp0q.webp)
 
 > 🔁 **Diferente do LinkedIn tradicional**, aqui a dinâmica é invertida: as empresas buscam talentos dev promissores, em vez de devs implorarem por atenção. 😉
 
-
-## Telas do APP no mobile
-
-<table>
-  <tr>
-    <td><img src="https://res.cloudinary.com/dgrhic6tl/image/upload/v1748014373/CapturadeTela18-ezgif.com-jpg-to-webp-converter_pjeom5.webp" width="100%"></td>
-    <td><img src="https://res.cloudinary.com/dgrhic6tl/image/upload/v1748013723/Captura-de-Tela-_19__nmu09z.webp" width="100%"></td>
-    <td><img src="https://res.cloudinary.com/dgrhic6tl/image/upload/v1748014369/CapturadeTela24-ezgif.com-jpg-to-webp-converter_re6pan.webp" width="100%"></td>
-  </tr>
-</table>
-
----
-
-## 🛠 Tecnologias utilizadas
-
+**Tecnologias utilizadas**
 ![React](https://img.shields.io/badge/React-20232A?style=for-the-badge&logo=react&logoColor=61DAFB)
 ![Tailwind CSS](https://img.shields.io/badge/Tailwind_CSS-38B2AC?style=for-the-badge&logo=tailwind-css&logoColor=white)
 ![HTML5](https://img.shields.io/badge/HTML5-E34F26?style=for-the-badge&logo=html5&logoColor=white)
@@ -36,6 +29,29 @@ O **RecruteiDev Login** é o módulo responsável por oferecer um login **comple
 ![React Icons](https://img.shields.io/badge/React_Icons-61DAFB?style=for-the-badge&logo=react&logoColor=white)
 ![Context API](https://img.shields.io/badge/Context_API-61DAFB?style=for-the-badge&logo=react&logoColor=white)
 
+---
+
+## Telas do APP no mobile
+
+<table>
+  <tr>
+    <td><img src="https://res.cloudinary.com/dgrhic6tl/image/upload/v1748014373/CapturadeTela18-ezgif.com-jpg-to-webp-converter_pjeom5.webp" width="100%"></td>
+    <td><img src="https://res.cloudinary.com/dgrhic6tl/image/upload/v1748013723/Captura-de-Tela-_19__nmu09z.webp" width="100%"></td>
+    <td><img src="https://res.cloudinary.com/dgrhic6tl/image/upload/v1748014369/CapturadeTela24-ezgif.com-jpg-to-webp-converter_re6pan.webp" width="100%"></td>
+  </tr>
+</table>
+
+---
+
+## Telas de ERRO do APP
+
+<table>
+  <tr>
+    <td><img src="https://res.cloudinary.com/dgrhic6tl/image/upload/v1748013946/Captura-de-Tela-_27__hunw76.webp" width="100%"></td>
+    <td><img src="https://res.cloudinary.com/dgrhic6tl/image/upload/v1748013919/Captura-de-Tela-_28__1_kyv7wk.webp" width="100%"></td>
+    <td><img src="https://res.cloudinary.com/dgrhic6tl/image/upload/v1748013944/Captura-de-Tela-_26__l9rsvi.webp" width="100%"></td>
+  </tr>
+</table>
 
 ---
 
