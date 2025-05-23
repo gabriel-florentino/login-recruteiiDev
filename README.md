@@ -17,22 +17,24 @@ O **RecruteiDev Login** é o módulo responsável por oferecer um login **comple
 
 ---
 
+
 ## 🛠 Tecnologias utilizadas
 
-- React
-- Tailwind CSS
-- HTML5
-- JavaScript (ES6+)
-- Firebase Authentication
-- React Hook Form (validações e formulários)
-- Yup (validação de esquemas)
-- Cleave.js (máscara de CPF)
-- Framer Motion (animações)
-- Vite (build tool)
-- JWT Fake (simulação de token)
-- React Router DOM (roteamento)
-- React Icons
-- Context API (controle global de autenticação)
+![React](https://img.shields.io/badge/React-20232A?style=for-the-badge&logo=react&logoColor=61DAFB)
+![Tailwind CSS](https://img.shields.io/badge/Tailwind_CSS-38B2AC?style=for-the-badge&logo=tailwind-css&logoColor=white)
+![HTML5](https://img.shields.io/badge/HTML5-E34F26?style=for-the-badge&logo=html5&logoColor=white)
+![JavaScript](https://img.shields.io/badge/JavaScript-323330?style=for-the-badge&logo=javascript&logoColor=F7DF1E)
+![Firebase](https://img.shields.io/badge/Firebase-FFCA28?style=for-the-badge&logo=firebase&logoColor=black)
+![React Hook Form](https://img.shields.io/badge/React_Hook_Form-EC5990?style=for-the-badge&logo=reacthookform&logoColor=white)
+![Yup](https://img.shields.io/badge/Yup-1A202C?style=for-the-badge&logo=yup&logoColor=white)
+![Cleave.js](https://img.shields.io/badge/Cleave.js-FF6A00?style=for-the-badge&logo=javascript&logoColor=white)
+![Framer Motion](https://img.shields.io/badge/Framer_Motion-0055FF?style=for-the-badge&logo=framer&logoColor=white)
+![Vite](https://img.shields.io/badge/Vite-646CFF?style=for-the-badge&logo=vite&logoColor=white)
+![JWT](https://img.shields.io/badge/JWT_FAKE-000000?style=for-the-badge&logo=jsonwebtokens&logoColor=white)
+![React Router](https://img.shields.io/badge/React_Router-CA4245?style=for-the-badge&logo=react-router&logoColor=white)
+![React Icons](https://img.shields.io/badge/React_Icons-61DAFB?style=for-the-badge&logo=react&logoColor=white)
+![Context API](https://img.shields.io/badge/Context_API-61DAFB?style=for-the-badge&logo=react&logoColor=white)
+
 
 ---
 
