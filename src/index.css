@@ -2,7 +2,4 @@
 @tailwind components;
 @tailwind utilities;
 
-html, body, #root {
-  @apply min-h-screen w-full place-items-center;
-  @apply dark:bg-backgroundPrimary-dark;
-}
+html, body, #root { @apply min-h-screen w-full place-items-center; }

@@ -1,4 +1,12 @@
-// src/components/moleculars/PageWrapper.jsx
+/**
+ * Componente wrapper que aplica animações de transição de entrada, saída e estado inicial
+ * nas páginas utilizando a biblioteca Framer Motion.
+ *
+ * @param {Object} props - Propriedades do componente.
+ * @param {React.ReactNode} props.children - Conteúdo a ser renderizado dentro do wrapper animado.
+ * @returns {JSX.Element} Elemento React com animações aplicadas.
+ */
+
 import { motion } from "framer-motion";
 
 const pageVariants = {

@@ -1,16 +1,33 @@
 import React from "react";
 import { useForm } from "react-hook-form";
 import { yupResolver } from "@hookform/resolvers/yup";
-import * as Yup from "yup";
 import FormBase from "../../../components/organisms/FormBase";
 import LinkText from "../../../components/atoms/Link";
 import { schema } from "../validations/recoverPasswordSchema"
 import PageWrapper from "../../../components/moleculars/pageWrapper"
+import { sendPasswordResetEmail } from "firebase/auth";
+import { auth } from "../../../firebase"; // ajuste conforme seu caminho
 
 export default function RecoverPassword() {
-  const onSubmit = (data) => {
-    console.log("Recover password request:", data);
-    alert("Link de recuperação enviado para o email informado!");
+  const onSubmit = async ({ email }) => {
+    try {
+      const actionCodeSettings = {
+        url: "http://localhost:5173/redefinir-senha",
+        handleCodeInApp: true,
+      };
+
+      await sendPasswordResetEmail(auth, email, actionCodeSettings);
+      alert("Link de recuperação enviado com sucesso. Verifique seu e-mail!");
+    } catch (error) {
+      console.error("Erro ao enviar e-mail de recuperação:", error);
+      if (error.code === "auth/user-not-found") {
+        alert("Nenhuma conta encontrada com esse e-mail.");
+      } else if (error.code === "auth/invalid-email") {
+        alert("E-mail inválido.");
+      } else {
+        alert("Erro ao enviar link. Tente novamente mais tarde.");
+      }
+    }
   };
 
   const {
@@ -56,7 +73,7 @@ export default function RecoverPassword() {
             )}
             extraAfterButton={() => (
               <div className="text-sm mt-4 mx-2">
-                <LinkText to="/login">Voltar para o login</LinkText>
+                <LinkText to="/entrar">Voltar para o login</LinkText>
               </div>
             )}
             register={register}
