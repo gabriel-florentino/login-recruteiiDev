@@ -21,11 +21,9 @@ O **RecruteiDev Login** é o módulo responsável por oferecer um login **comple
 🚀 **Acesse a aplicação real:**  
 👉 [Clique aqui para ver o app no ar!](https://login-recruteii-dev.vercel.app/)
 
----
-
 ![Banner do Projeto](https://res.cloudinary.com/dgrhic6tl/image/upload/v1748014376/CapturadeTela16-ezgif.com-jpg-to-webp-converter_eqjp0q.webp)
 
----
+
 
 ![React](https://img.shields.io/badge/React-20232A?style=for-the-badge&logo=react&logoColor=61DAFB)
 ![Tailwind CSS](https://img.shields.io/badge/Tailwind_CSS-38B2AC?style=for-the-badge&logo=tailwind-css&logoColor=white)
@@ -42,6 +40,7 @@ O **RecruteiDev Login** é o módulo responsável por oferecer um login **comple
 ![React Icons](https://img.shields.io/badge/React_Icons-61DAFB?style=for-the-badge&logo=react&logoColor=white)
 ![Context API](https://img.shields.io/badge/Context_API-61DAFB?style=for-the-badge&logo=react&logoColor=white)
 
+---
 ---
 
 ## Telas do APP no mobile
@@ -66,6 +65,7 @@ O **RecruteiDev Login** é o módulo responsável por oferecer um login **comple
   </tr>
 </table>
 
+---
 ---
 
 ## ✨ Funcionalidades principais
@@ -120,6 +120,7 @@ O **RecruteiDev Login** é o módulo responsável por oferecer um login **comple
 </table>
 
 ---
+---
 
 ## 🔮 Próximas etapas (Roadmap)
 
@@ -169,6 +170,7 @@ O **RecruteiDev Login** é o módulo responsável por oferecer um login **comple
     </tr>
 </table>
 
+---
 
 ## 🎯 Como usar
 
@@ -243,8 +245,20 @@ Este projeto está licenciado sob a MIT License.
 
 ## 🙌 Contato
 
-Quer trocar uma ideia ou tirar dúvidas? Me chama no [gabrielflorentino.contato@gmail.com] ou abra uma issue aqui no GitHub. Contatos no perfil.
+<p text-align="center">
+  <a href="mailto:gabrielflorentino.contato@gmail.com">
+    <img src="https://img.shields.io/badge/E--mail-D14836?style=for-the-badge&logo=gmail&logoColor=white" alt="Email badge"/>
+  </a>
+  <a href="https://wa.me/5547996594157">
+    <img src="https://img.shields.io/badge/WhatsApp-25D366?style=for-the-badge&logo=whatsapp&logoColor=white" alt="WhatsApp badge"/>
+  </a>
+  <a href="https://www.linkedin.com/in/gabriel-florentino">
+    <img src="https://img.shields.io/badge/LinkedIn-0077B5?style=for-the-badge&logo=linkedin&logoColor=white" alt="LinkedIn badge"/>
+  </a>
+</p>
+
+Mais contatos no perfil!
 
 ---
 
-RecruteiDev — Onde o futuro dos devs começa.
+**RecruteiDev — Onde o futuro dos devs começa.**
