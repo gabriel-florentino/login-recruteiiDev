@@ -1,14 +1,28 @@
 # RecruteiDev - Módulo de Login
 
-> Um sistema robusto e seguro de autenticação para o RecruteiDev, a plataforma que inverte o jogo do mercado de trabalho para desenvolvedores iniciantes — aqui, são as empresas que procuram os devs!
+![Banner do Projeto](https://res.cloudinary.com/dgrhic6tl/image/upload/v1748014376/CapturadeTela16-ezgif.com-jpg-to-webp-converter_eqjp0q.webp)
+
+## Descrição
+
+> 🔁 **Diferente do LinkedIn tradicional**, aqui a dinâmica é invertida: as empresas buscam talentos dev promissores, em vez de devs implorarem por atenção. 😉
 
 ---
 
 ## 🚀 Sobre o projeto
 
-O **RecruteiDev Login** é o módulo responsável por oferecer um login completo, seguro e elegante para a plataforma RecruteiDev. O objetivo é garantir que desenvolvedores e empresas acessem seus perfis com facilidade, mantendo a segurança e experiência de uso no mais alto nível.
+O **RecruteiDev Login** é o módulo responsável por oferecer um login **completo, seguro e elegante** para a plataforma RecruteiDev. O objetivo é garantir que desenvolvedores e empresas acessem seus perfis com facilidade, mantendo a segurança e experiência de uso no mais alto nível.
 
-A plataforma **RecruteiDev** nasce para facilitar a vida dos desenvolvedores iniciantes, oferecendo oportunidades reais e inovadoras. Diferente de um LinkedIn tradicional, aqui são as empresas que buscam os talentos — um verdadeiro *LinkedIn reverso*.
+---
+
+## Telas do APP no mobile
+
+<p float="left">
+  <img src="https://res.cloudinary.com/dgrhic6tl/image/upload/v1748014373/CapturadeTela18-ezgif.com-jpg-to-webp-converter_pjeom5.webp" width="30%" />
+  <img src="https://res.cloudinary.com/dgrhic6tl/image/upload/v1748013723/Captura-de-Tela-_19__nmu09z.webp" width="30%" />
+  <img src="https://res.cloudinary.com/dgrhic6tl/image/upload/v1748014369/CapturadeTela24-ezgif.com-jpg-to-webp-converter_re6pan.webp" width="30%" />
+</p>
+
+![Gif ou Screenshot](URL_DA_IMAGEM)
 
 ---
 
