@@ -121,14 +121,14 @@ O **RecruteiDev Login** é o módulo responsável por oferecer um login **comple
 
 ---
 
-## 🔮 Próximas etapas (Roadmap
+## 🔮 Próximas etapas (Roadmap)
 
 <table>
   <tr>
     <td>
       <ul>
         <li>
-          Criação da landing page do projeto
+          Criação da landing page do projeto                                                
         </li>
         <li>
           Fazer testes em jest
