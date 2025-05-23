@@ -92,7 +92,7 @@ export const AuthProvider = ({ children }) => {
     setUsuario(null);
     localStorage.removeItem("usuarioLogado");
     sessionStorage.removeItem("usuarioLogado");
-    navigate("/entrar");
+    navigate("/");
   };
 
   /**
@@ -110,7 +110,7 @@ export const AuthProvider = ({ children }) => {
     localStorage.removeItem("usuarioLogado");
     sessionStorage.removeItem("usuarioLogado");
 
-    navigate("/entrar");
+    navigate("/");
   };
 
   /**

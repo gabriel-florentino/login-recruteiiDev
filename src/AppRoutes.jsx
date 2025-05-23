@@ -13,7 +13,7 @@ function AnimatedRoutes() {
       <Routes location={location} key={location.pathname}>
         {/* Rotas públicas, mas bloqueadas para usuários logados */}
         <Route
-          path="/entrar"
+          path="/"
           element={
             <PublicOnlyRoute>
               <Login />

@@ -54,7 +54,7 @@ export default function Register() {
     }
 
     toast.success(resultado.mensagem);
-    navigate("/entrar");
+    navigate("/");
   } catch (err) {
     toast.error("Erro no cadastro.");
   }
@@ -123,7 +123,7 @@ export default function Register() {
                     nameSaveData="isEnterprise"
                     text="Vou contratar devs"
                   />
-                  <LinkText to="/entrar">Já possui conta?</LinkText>
+                  <LinkText to="/">Já possui conta?</LinkText>
                 </div>
               )}
             />

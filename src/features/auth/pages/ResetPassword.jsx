@@ -8,7 +8,7 @@ export default function ResetPassword() {
       warning="Funcionalidade em desenvolvimento."
       menssage="A redefinição de senha estará disponível quando integrarmos o sistema com o backend. Por enquanto, essa área está em construção."
       textButton="Voltar para o login"
-      linkForButton="/entrar"
+      linkForButton="/"
     />
   );
 }

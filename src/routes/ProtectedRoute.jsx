@@ -29,7 +29,7 @@ export default function ProtectedRoute({ children, only }) {
     if (!usuario) {
       setMensagem({
         texto: "Você precisa mostrar sua credencial futurista para entrar aqui. Autentique-se e tente de novo!",
-        destino: "/entrar",
+        destino: "/",
       });
       return;
     }

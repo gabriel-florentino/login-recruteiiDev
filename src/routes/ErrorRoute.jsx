@@ -39,7 +39,7 @@ export default function ErrorRoute() {
           navigate("/cadastrar-desenvolvedor");
         }
       } else {
-        navigate("/entrar");
+        navigate("/");
       }
     }, 5000);
 

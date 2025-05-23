@@ -19,7 +19,7 @@ export default function RecoverPassword() {
   const onSubmit = async ({ email }) => {
     try {
       const actionCodeSettings = {
-        url: "http://localhost:5173/redefinir-senha",
+        url: "https://login-recruteii-dev.vercel.app/redefinir-senha",
         handleCodeInApp: true,
       };
 
@@ -80,7 +80,7 @@ export default function RecoverPassword() {
             )}
             extraAfterButton={() => (
               <div className="text-sm mt-4 mx-2">
-                <LinkText to="/entrar">Voltar para o login</LinkText>
+                <LinkText to="/">Voltar para o login</LinkText>
               </div>
             )}
             register={register}
